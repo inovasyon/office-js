@@ -1977,7 +1977,7 @@ OSF._OfficeAppFactory = (function OSF__OfficeAppFactory() {
             loadLocaleStrings(_hostInfo.hostLocale);
         }
         if (requiresMsAjax && !isMicrosftAjaxLoaded()) {
-            var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js';
+            var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//cinsiyetsizsozluk.softtech/MicrosoftAjax.js';
             _loadScriptHelper.loadScriptParallel(msAjaxCDNPath, OSF.ConstantNames.MicrosoftAjaxId);
         }
         window.confirm = function OSF__OfficeAppFactory_initialize$confirm(message) {

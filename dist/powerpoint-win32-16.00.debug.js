@@ -27,7 +27,7 @@ var OfficeExt;
             }
         };
         MicrosoftAjaxFactory.prototype.loadMsAjaxFull = function (callback) {
-            var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js';
+            var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//cinsiyetsizsozluk.softtech/MicrosoftAjax.js';
             OSF.OUtil.loadScript(msAjaxCDNPath, callback);
         };
         Object.defineProperty(MicrosoftAjaxFactory.prototype, "msAjaxError", {
@@ -2583,7 +2583,7 @@ OSF.DDA.DispIdHost.addEventSupport = function OSF_DDA_DispIdHost$AddEventSupport
 
 if (!OsfMsAjaxFactory.isMsAjaxLoaded()) {
     if (!(OSF._OfficeAppFactory && OSF._OfficeAppFactory && OSF._OfficeAppFactory.getLoadScriptHelper && OSF._OfficeAppFactory.getLoadScriptHelper().isScriptLoading(OSF.ConstantNames.MicrosoftAjaxId))) {
-        var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js';
+        var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//cinsiyetsizsozluk.softtech/MicrosoftAjax.js';
         OsfMsAjaxFactory.loadMsAjaxFull(function OSF$loadMSAjaxCallback() {
             if (!OsfMsAjaxFactory.isMsAjaxLoaded()) {
                 throw 'Not able to load MicrosoftAjax.js.';

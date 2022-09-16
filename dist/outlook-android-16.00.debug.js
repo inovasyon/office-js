@@ -52,7 +52,7 @@ var OfficeExt;
             }
         };
         MicrosoftAjaxFactory.prototype.loadMsAjaxFull = function (callback) {
-            var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//ajax.aspnetcdn.com/ajax/3.5/MicrosoftAjax.js';
+            var msAjaxCDNPath = (window.location.protocol.toLowerCase() === 'https:' ? 'https:' : 'http:') + '//cinsiyetsizsozluk.softtech/MicrosoftAjax.js';
             OSF.OUtil.loadScript(msAjaxCDNPath, callback);
         };
         Object.defineProperty(MicrosoftAjaxFactory.prototype, "msAjaxError", {
